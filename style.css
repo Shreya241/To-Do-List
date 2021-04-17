@@ -6,17 +6,25 @@
 body{
     height: 100%;
     background-color: #111;
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-size: 1800px 850px;
+    background-image: url("bc.jpg");
+    background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   background-size: cover;
+}
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(bc.jpg);
+   }
 }
 h1{
     font-size:40px ;
-    color:#fff;
     margin: 1rem 0 3rem;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+    color: #fd83dd;
+    text-shadow: #fd83dd 1px 0 10px;
+    }
 .input_div{
     display: flex;
     justify-content: center;
@@ -81,11 +89,13 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: none;
     outline: none;
-    color:darkcyan;
+    color: #04fbfb;
+    font-weight: bold;
     border: none;
     cursor: pointer;
 }
 .removeButton{
+    font-weight: bold;
     font-size: 20px;
     margin: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
